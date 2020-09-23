@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Servers</key>
+	<array>
+		<string>http://server1.com</string>
+		<string>http://server2.com</string>
+	</array>
+	<key>Version</key>
+	<integer>98</integer>
+	<key>Copyright</key>
+	<string>Copyright 2020</string>
+</dict>
+</plist>
