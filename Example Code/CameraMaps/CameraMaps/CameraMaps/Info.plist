@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>NSCameraUsageDescription</key>
 	<string>I want to use your camera.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>I need your location to track data and steal your info.</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
