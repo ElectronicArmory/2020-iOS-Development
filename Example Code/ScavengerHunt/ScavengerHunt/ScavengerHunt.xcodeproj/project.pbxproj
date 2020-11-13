@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA0DC47D255E177100782C8C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA0DC47C255E177100782C8C /* Podfile */; };
+		FA0DC483255E17E700782C8C /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DC482255E17E700782C8C /* WebServices.swift */; };
+		FA0DC486255E21BC00782C8C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DC485255E21BC00782C8C /* MapViewController.swift */; };
+		FA0DC489255E223E00782C8C /* GeoCacheMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0DC488255E223E00782C8C /* GeoCacheMapPin.swift */; };
+		FA240EE7255B703200F7A5FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240EE6255B703200F7A5FC /* AppDelegate.swift */; };
+		FA240EE9255B703200F7A5FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240EE8255B703200F7A5FC /* SceneDelegate.swift */; };
+		FA240EEB255B703200F7A5FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240EEA255B703200F7A5FC /* ViewController.swift */; };
+		FA240EEE255B703200F7A5FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA240EEC255B703200F7A5FC /* Main.storyboard */; };
+		FA240EF0255B703400F7A5FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA240EEF255B703400F7A5FC /* Assets.xcassets */; };
+		FA240EF3255B703400F7A5FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA240EF1255B703400F7A5FC /* LaunchScreen.storyboard */; };
+		FA240EFC255B721700F7A5FC /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240EFB255B721700F7A5FC /* DatabaseController.swift */; };
+		FA240F01255B72CA00F7A5FC /* GeoCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA240EFF255B72CA00F7A5FC /* GeoCache.xcdatamodeld */; };
+		FA240F04255B78DC00F7A5FC /* LocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240F03255B78DC00F7A5FC /* LocationController.swift */; };
+		FA240F07255B7C8600F7A5FC /* GeoCacheListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240F06255B7C8600F7A5FC /* GeoCacheListViewController.swift */; };
+		FA240F0A255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240F09255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift */; };
+		FA240F0D255B7F9700F7A5FC /* GeoCacheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240F0C255B7F9700F7A5FC /* GeoCacheController.swift */; };
+		FBE6A397DFFC9226FC0C0B6E /* Pods_ScavengerHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F386889744CA461D1785A6 /* Pods_ScavengerHunt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09A0B20B25CCEA3A1E4FD926 /* Pods-ScavengerHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScavengerHunt.debug.xcconfig"; path = "Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		11F386889744CA461D1785A6 /* Pods_ScavengerHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScavengerHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		690D98714EB355789B16E61E /* Pods-ScavengerHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScavengerHunt.release.xcconfig"; path = "Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt.release.xcconfig"; sourceTree = "<group>"; };
+		FA0DC47C255E177100782C8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FA0DC482255E17E700782C8C /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		FA0DC485255E21BC00782C8C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA0DC488255E223E00782C8C /* GeoCacheMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheMapPin.swift; sourceTree = "<group>"; };
+		FA240EE3255B703200F7A5FC /* ScavengerHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA240EE6255B703200F7A5FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA240EE8255B703200F7A5FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA240EEA255B703200F7A5FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA240EED255B703200F7A5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA240EEF255B703400F7A5FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA240EF2255B703400F7A5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA240EF4255B703400F7A5FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA240EFB255B721700F7A5FC /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
+		FA240F00255B72CA00F7A5FC /* GeoCache.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoCache.xcdatamodel; sourceTree = "<group>"; };
+		FA240F03255B78DC00F7A5FC /* LocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationController.swift; sourceTree = "<group>"; };
+		FA240F06255B7C8600F7A5FC /* GeoCacheListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheListViewController.swift; sourceTree = "<group>"; };
+		FA240F09255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheCRUDViewController.swift; sourceTree = "<group>"; };
+		FA240F0C255B7F9700F7A5FC /* GeoCacheController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA240EE0255B703200F7A5FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE6A397DFFC9226FC0C0B6E /* Pods_ScavengerHunt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA76256864994F63222DA371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11F386889744CA461D1785A6 /* Pods_ScavengerHunt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D947D4E1D653F3733B9B3CE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09A0B20B25CCEA3A1E4FD926 /* Pods-ScavengerHunt.debug.xcconfig */,
+				690D98714EB355789B16E61E /* Pods-ScavengerHunt.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA240EDA255B703200F7A5FC = {
+			isa = PBXGroup;
+			children = (
+				FA240EE5255B703200F7A5FC /* ScavengerHunt */,
+				FA240EE4255B703200F7A5FC /* Products */,
+				D947D4E1D653F3733B9B3CE6 /* Pods */,
+				AA76256864994F63222DA371 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA240EE4255B703200F7A5FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA240EE3255B703200F7A5FC /* ScavengerHunt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA240EE5255B703200F7A5FC /* ScavengerHunt */ = {
+			isa = PBXGroup;
+			children = (
+				FA240EE6255B703200F7A5FC /* AppDelegate.swift */,
+				FA240EE8255B703200F7A5FC /* SceneDelegate.swift */,
+				FA240EEA255B703200F7A5FC /* ViewController.swift */,
+				FA240EEC255B703200F7A5FC /* Main.storyboard */,
+				FA240EEF255B703400F7A5FC /* Assets.xcassets */,
+				FA240EF1255B703400F7A5FC /* LaunchScreen.storyboard */,
+				FA240EF4255B703400F7A5FC /* Info.plist */,
+				FA240EFB255B721700F7A5FC /* DatabaseController.swift */,
+				FA240EFF255B72CA00F7A5FC /* GeoCache.xcdatamodeld */,
+				FA240F03255B78DC00F7A5FC /* LocationController.swift */,
+				FA240F06255B7C8600F7A5FC /* GeoCacheListViewController.swift */,
+				FA240F09255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift */,
+				FA240F0C255B7F9700F7A5FC /* GeoCacheController.swift */,
+				FA0DC47C255E177100782C8C /* Podfile */,
+				FA0DC482255E17E700782C8C /* WebServices.swift */,
+				FA0DC485255E21BC00782C8C /* MapViewController.swift */,
+				FA0DC488255E223E00782C8C /* GeoCacheMapPin.swift */,
+			);
+			path = ScavengerHunt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA240EE2255B703200F7A5FC /* ScavengerHunt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA240EF7255B703400F7A5FC /* Build configuration list for PBXNativeTarget "ScavengerHunt" */;
+			buildPhases = (
+				B462EB2B67C28B45D09099D2 /* [CP] Check Pods Manifest.lock */,
+				FA240EDF255B703200F7A5FC /* Sources */,
+				FA240EE0255B703200F7A5FC /* Frameworks */,
+				FA240EE1255B703200F7A5FC /* Resources */,
+				BA44DFEF763E6CD018799011 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScavengerHunt;
+			productName = ScavengerHunt;
+			productReference = FA240EE3255B703200F7A5FC /* ScavengerHunt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA240EDB255B703200F7A5FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					FA240EE2255B703200F7A5FC = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = FA240EDE255B703200F7A5FC /* Build configuration list for PBXProject "ScavengerHunt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA240EDA255B703200F7A5FC;
+			productRefGroup = FA240EE4255B703200F7A5FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA240EE2255B703200F7A5FC /* ScavengerHunt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA240EE1255B703200F7A5FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA240EF3255B703400F7A5FC /* LaunchScreen.storyboard in Resources */,
+				FA240EF0255B703400F7A5FC /* Assets.xcassets in Resources */,
+				FA0DC47D255E177100782C8C /* Podfile in Resources */,
+				FA240EEE255B703200F7A5FC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B462EB2B67C28B45D09099D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScavengerHunt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA44DFEF763E6CD018799011 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA240EDF255B703200F7A5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0DC486255E21BC00782C8C /* MapViewController.swift in Sources */,
+				FA240EFC255B721700F7A5FC /* DatabaseController.swift in Sources */,
+				FA240F01255B72CA00F7A5FC /* GeoCache.xcdatamodeld in Sources */,
+				FA240EEB255B703200F7A5FC /* ViewController.swift in Sources */,
+				FA240EE7255B703200F7A5FC /* AppDelegate.swift in Sources */,
+				FA240F04255B78DC00F7A5FC /* LocationController.swift in Sources */,
+				FA240EE9255B703200F7A5FC /* SceneDelegate.swift in Sources */,
+				FA0DC483255E17E700782C8C /* WebServices.swift in Sources */,
+				FA240F0A255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift in Sources */,
+				FA240F07255B7C8600F7A5FC /* GeoCacheListViewController.swift in Sources */,
+				FA240F0D255B7F9700F7A5FC /* GeoCacheController.swift in Sources */,
+				FA0DC489255E223E00782C8C /* GeoCacheMapPin.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA240EEC255B703200F7A5FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA240EED255B703200F7A5FC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA240EF1255B703400F7A5FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA240EF2255B703400F7A5FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA240EF5255B703400F7A5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA240EF6255B703400F7A5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA240EF8255B703400F7A5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A0B20B25CCEA3A1E4FD926 /* Pods-ScavengerHunt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScavengerHunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.electronicarmory.ScavengerHunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA240EF9255B703400F7A5FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690D98714EB355789B16E61E /* Pods-ScavengerHunt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ScavengerHunt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.electronicarmory.ScavengerHunt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA240EDE255B703200F7A5FC /* Build configuration list for PBXProject "ScavengerHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA240EF5255B703400F7A5FC /* Debug */,
+				FA240EF6255B703400F7A5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA240EF7255B703400F7A5FC /* Build configuration list for PBXNativeTarget "ScavengerHunt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA240EF8255B703400F7A5FC /* Debug */,
+				FA240EF9255B703400F7A5FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FA240EFF255B72CA00F7A5FC /* GeoCache.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FA240F00255B72CA00F7A5FC /* GeoCache.xcdatamodel */,
+			);
+			currentVersion = FA240F00255B72CA00F7A5FC /* GeoCache.xcdatamodel */;
+			path = GeoCache.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FA240EDB255B703200F7A5FC /* Project object */;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H15" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GeoCache" representedClassName="GeoCache" syncable="YES" codeGenerationType="class">
+        <attribute name="geocacheCategory" optional="YES" attributeType="String"/>
+        <attribute name="geocacheDateStart" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="geocacheDescription" optional="YES" attributeType="String"/>
+        <attribute name="geocacheImage" optional="YES" attributeType="String"/>
+        <attribute name="geocacheName" optional="YES" attributeType="String"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="geocache" inverseEntity="Location"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="class">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="street" optional="YES" attributeType="String"/>
+        <relationship name="geocache" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GeoCache" inverseName="location" inverseEntity="GeoCache"/>
+    </entity>
+    <elements>
+        <element name="GeoCache" positionX="-85" positionY="-81" width="128" height="133"/>
+        <element name="Location" positionX="195" positionY="-66" width="128" height="118"/>
+    </elements>
+</model>
