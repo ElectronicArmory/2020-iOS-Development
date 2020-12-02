@@ -15,8 +15,14 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
 
 
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
         let geoCaches = GeoCacheController.geocacheList()
 
+        let allAnnotations = self.mapView.annotations
+        self.mapView.removeAnnotations(allAnnotations)
         for geoCache in geoCaches {
             let coordinate = CLLocationCoordinate2DMake(geoCache.location!.latitude as Double, geoCache.location!.longitude as Double)
 

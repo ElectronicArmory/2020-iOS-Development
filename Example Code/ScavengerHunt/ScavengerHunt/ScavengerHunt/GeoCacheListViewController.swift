@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CoreData
+
 
 class GeoCacheListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -32,6 +34,8 @@ class GeoCacheListViewController: UIViewController, UITableViewDelegate, UITable
 
 
         NotificationCenter.default.addObserver(self, selector: #selector(geoCacheWasUpdated(notification:)), name: NSNotification.Name("NEW_GEOCACHE"), object: nil)
+
+        GeoCacheController.fetchData()
     }
 
     override func viewDidAppear(_ animated: Bool) {

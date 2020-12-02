@@ -24,7 +24,7 @@ class GeoCacheController: NSObject {
             let fetchResults = try managedObjectContext.fetch(fetchRequest)
 
             if(fetchResults.count > 0){
-                GeoCacheController.geocacheArray.append(contentsOf: fetchResults)
+                GeoCacheController.geocacheArray = fetchResults
                 NotificationCenter.default.post(Notification(name: Notification.Name("NEW_GEOCACHE")))
             }
         }
@@ -37,6 +37,7 @@ class GeoCacheController: NSObject {
 
     class func addGeoCache(newGeoCache:GeoCache){
         GeoCacheController.geocacheArray.append(newGeoCache)
+        DatabaseController.saveContext()
     }
 
     class func createGeoCache(newName:String, newDescription:String, newCategory:String, newLatitude:Double, newLongitude:Double, shouldSaveToDB:Bool ){
