@@ -13,6 +13,7 @@ class GeoCacheListViewController: UIViewController, UITableViewDelegate, UITable
 
     @IBOutlet weak var tableView: UITableView!
 
+    // MARK: - Table View Code
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return GeoCacheController.geocacheList().count
     }

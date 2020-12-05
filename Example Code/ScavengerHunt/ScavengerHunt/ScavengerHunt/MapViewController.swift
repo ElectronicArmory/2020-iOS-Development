@@ -18,10 +18,7 @@ class MapViewController: UIViewController {
 
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        let geoCaches = GeoCacheController.geocacheList()
-
-        let allAnnotations = self.mapView.annotations
+    fileprivate func addGeoCachePin(_ allAnnotations: [MKAnnotation], _ geoCaches: [GeoCache]) {
         self.mapView.removeAnnotations(allAnnotations)
         for geoCache in geoCaches {
             let coordinate = CLLocationCoordinate2DMake(geoCache.location!.latitude as Double, geoCache.location!.longitude as Double)
@@ -29,6 +26,13 @@ class MapViewController: UIViewController {
             let mapPin = GeoCacheMapPin(title: geoCache.geocacheName!, subtitle: geoCache.geocacheDescription!, coordinate: coordinate)
             mapView.addAnnotation(mapPin)
         }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        let geoCaches = GeoCacheController.geocacheList()
+
+        let allAnnotations = self.mapView.annotations
+        addGeoCachePin(allAnnotations, geoCaches)
     }
     
 
