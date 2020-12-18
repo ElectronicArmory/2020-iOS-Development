@@ -23,6 +23,8 @@
 		FA240F07255B7C8600F7A5FC /* GeoCacheListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240F06255B7C8600F7A5FC /* GeoCacheListViewController.swift */; };
 		FA240F0A255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240F09255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift */; };
 		FA240F0D255B7F9700F7A5FC /* GeoCacheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA240F0C255B7F9700F7A5FC /* GeoCacheController.swift */; };
+		FAAE877525805C020041DF06 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE877425805C020041DF06 /* CustomTableViewCell.swift */; };
+		FAAE87782580659C0041DF06 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAE87772580659C0041DF06 /* GoogleService-Info.plist */; };
 		FBE6A397DFFC9226FC0C0B6E /* Pods_ScavengerHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F386889744CA461D1785A6 /* Pods_ScavengerHunt.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +32,7 @@
 		09A0B20B25CCEA3A1E4FD926 /* Pods-ScavengerHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScavengerHunt.debug.xcconfig"; path = "Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt.debug.xcconfig"; sourceTree = "<group>"; };
 		11F386889744CA461D1785A6 /* Pods_ScavengerHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScavengerHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		690D98714EB355789B16E61E /* Pods-ScavengerHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScavengerHunt.release.xcconfig"; path = "Target Support Files/Pods-ScavengerHunt/Pods-ScavengerHunt.release.xcconfig"; sourceTree = "<group>"; };
-		FA0DC47C255E177100782C8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		FA0DC47C255E177100782C8C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA0DC482255E17E700782C8C /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 		FA0DC485255E21BC00782C8C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA0DC488255E223E00782C8C /* GeoCacheMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheMapPin.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		FA240F06255B7C8600F7A5FC /* GeoCacheListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheListViewController.swift; sourceTree = "<group>"; };
 		FA240F09255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheCRUDViewController.swift; sourceTree = "<group>"; };
 		FA240F0C255B7F9700F7A5FC /* GeoCacheController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoCacheController.swift; sourceTree = "<group>"; };
+		FAAE877425805C020041DF06 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FAAE87772580659C0041DF06 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,15 +114,25 @@
 				FA240EFB255B721700F7A5FC /* DatabaseController.swift */,
 				FA240EFF255B72CA00F7A5FC /* GeoCache.xcdatamodeld */,
 				FA240F03255B78DC00F7A5FC /* LocationController.swift */,
-				FA240F06255B7C8600F7A5FC /* GeoCacheListViewController.swift */,
-				FA240F09255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift */,
-				FA240F0C255B7F9700F7A5FC /* GeoCacheController.swift */,
+				FAAE879A2583046D0041DF06 /* GeoCache */,
 				FA0DC47C255E177100782C8C /* Podfile */,
 				FA0DC482255E17E700782C8C /* WebServices.swift */,
 				FA0DC485255E21BC00782C8C /* MapViewController.swift */,
-				FA0DC488255E223E00782C8C /* GeoCacheMapPin.swift */,
+				FAAE877425805C020041DF06 /* CustomTableViewCell.swift */,
+				FAAE87772580659C0041DF06 /* GoogleService-Info.plist */,
 			);
 			path = ScavengerHunt;
+			sourceTree = "<group>";
+		};
+		FAAE879A2583046D0041DF06 /* GeoCache */ = {
+			isa = PBXGroup;
+			children = (
+				FA240F06255B7C8600F7A5FC /* GeoCacheListViewController.swift */,
+				FA240F09255B7DF700F7A5FC /* GeoCacheCRUDViewController.swift */,
+				FA240F0C255B7F9700F7A5FC /* GeoCacheController.swift */,
+				FA0DC488255E223E00782C8C /* GeoCacheMapPin.swift */,
+			);
+			path = GeoCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +196,7 @@
 			files = (
 				FA240EF3255B703400F7A5FC /* LaunchScreen.storyboard in Resources */,
 				FA240EF0255B703400F7A5FC /* Assets.xcassets in Resources */,
+				FAAE87782580659C0041DF06 /* GoogleService-Info.plist in Resources */,
 				FA0DC47D255E177100782C8C /* Podfile in Resources */,
 				FA240EEE255B703200F7A5FC /* Main.storyboard in Resources */,
 			);
@@ -248,6 +263,7 @@
 				FA240F07255B7C8600F7A5FC /* GeoCacheListViewController.swift in Sources */,
 				FA240F0D255B7F9700F7A5FC /* GeoCacheController.swift in Sources */,
 				FA0DC489255E223E00782C8C /* GeoCacheMapPin.swift in Sources */,
+				FAAE877525805C020041DF06 /* CustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

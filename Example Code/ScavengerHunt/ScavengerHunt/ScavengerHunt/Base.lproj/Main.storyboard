@@ -13,50 +13,50 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GeoCacheCRUDViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFb-RH-EbG">
-                                <rect key="frame" x="20" y="160" width="335" height="20"/>
+                                <rect key="frame" x="20" y="72" width="335" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sGp-RB-IV5">
-                                <rect key="frame" x="20" y="188" width="335" height="34"/>
+                                <rect key="frame" x="20" y="100" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvc-tX-M0G">
-                                <rect key="frame" x="20" y="248" width="335" height="21"/>
+                                <rect key="frame" x="20" y="160" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYD-Jb-1Lh">
-                                <rect key="frame" x="20" y="277" width="335" height="34"/>
+                                <rect key="frame" x="20" y="189" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oV9-M3-uTW">
-                                <rect key="frame" x="20" y="345" width="335" height="21"/>
+                                <rect key="frame" x="20" y="257" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-2v-ZPu">
-                                <rect key="frame" x="20" y="374" width="335" height="34"/>
+                                <rect key="frame" x="20" y="286" width="335" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hld-I0-1fT">
-                                <rect key="frame" x="0.0" y="435" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="347" width="375" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Tkp-cO-WYQ"/>
                                 </constraints>
                             </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YYZ-Qg-h0H">
-                                <rect key="frame" x="80" y="593" width="215" height="128"/>
+                                <rect key="frame" x="80" y="505" width="215" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="xda-QT-AKS"/>
                                 </constraints>
@@ -132,7 +132,7 @@
                     <navigationItem key="navigationItem" id="kq3-8b-utG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bLT-zh-obb">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="NFp-5H-6YO"/>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" id="7I1-RM-9gn"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -156,12 +156,58 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GeoCacheCell" id="gRn-5d-bvq">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GeoCacheCell" rowHeight="96" id="gRn-5d-bvq" customClass="CustomTableViewCell" customModule="ScavengerHunt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gRn-5d-bvq" id="lt5-7y-FqQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWk-JN-yhX">
+                                                    <rect key="frame" x="310" y="33" width="49" height="31"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="47" id="36w-eD-94Z"/>
+                                                    </constraints>
+                                                </switch>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hnT-oe-4Ah">
+                                                    <rect key="frame" x="16" y="31" width="60" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="lh0-Eq-BzH"/>
+                                                        <constraint firstAttribute="height" constant="35" id="zIQ-ir-qZo"/>
+                                                    </constraints>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="oWk-JN-yhX" secondAttribute="trailing" constant="18" id="0kE-9Z-X4S"/>
+                                                <constraint firstItem="hnT-oe-4Ah" firstAttribute="top" secondItem="lt5-7y-FqQ" secondAttribute="top" constant="31" id="F5t-ou-Z18"/>
+                                                <constraint firstItem="oWk-JN-yhX" firstAttribute="top" secondItem="lt5-7y-FqQ" secondAttribute="top" constant="33" id="IPc-2X-XZx"/>
+                                                <constraint firstItem="hnT-oe-4Ah" firstAttribute="leading" secondItem="lt5-7y-FqQ" secondAttribute="leading" constant="16" id="qJ6-75-Vu8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activityIndicator" destination="hnT-oe-4Ah" id="6lv-Jt-HNR"/>
+                                            <outlet property="enabledSwitch" destination="lt5-7y-FqQ" id="bFJ-5W-fyK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BasicCell" textLabel="lTU-oT-dbb" imageView="Vnq-3I-UZO" rowHeight="96" style="IBUITableViewCellStyleDefault" id="RaZ-Cv-cjv" customClass="CustomTableViewCell" customModule="ScavengerHunt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="124" width="375" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RaZ-Cv-cjv" id="4w6-OX-rhS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lTU-oT-dbb">
+                                                    <rect key="frame" x="55.166666666666657" y="0.0" width="303.83333333333337" height="96"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="folder.fill.badge.person.crop" catalog="system" id="Vnq-3I-UZO">
+                                                    <rect key="frame" x="15.833333333333334" y="39" width="24.333333333333332" height="17.666666666666668"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -193,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUo-D0-TbP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1750.7246376811595" y="-430.58035714285711"/>
+            <point key="canvasLocation" x="1749.5999999999999" y="-430.78817733990149"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="IpJ-V4-xWc">
@@ -253,9 +299,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NFp-5H-6YO"/>
+        <segue reference="7I1-RM-9gn"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="folder.fill.badge.person.crop" catalog="system" width="128" height="91"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

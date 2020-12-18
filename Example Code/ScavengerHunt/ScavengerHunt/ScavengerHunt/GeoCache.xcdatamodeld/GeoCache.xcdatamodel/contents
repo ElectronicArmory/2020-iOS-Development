@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="19H15" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Audit" representedClassName="Audit" syncable="YES" codeGenerationType="class">
+        <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastEdited" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="userID" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="GeoCache" representedClassName="GeoCache" syncable="YES" codeGenerationType="class">
         <attribute name="geocacheCategory" optional="YES" attributeType="String"/>
         <attribute name="geocacheDateStart" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
@@ -7,6 +12,7 @@
         <attribute name="geocacheFound" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="geocacheImage" optional="YES" attributeType="String"/>
         <attribute name="geocacheName" optional="YES" attributeType="String"/>
+        <relationship name="audit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Audit"/>
         <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="geocache" inverseEntity="Location"/>
     </entity>
     <entity name="Location" representedClassName="Location" syncable="YES" codeGenerationType="class">
@@ -14,10 +20,12 @@
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="street" optional="YES" attributeType="String"/>
+        <relationship name="audit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Audit"/>
         <relationship name="geocache" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GeoCache" inverseName="location" inverseEntity="GeoCache"/>
     </entity>
     <elements>
-        <element name="GeoCache" positionX="-106" positionY="-133" width="128" height="148"/>
-        <element name="Location" positionX="155" positionY="-121" width="128" height="118"/>
+        <element name="GeoCache" positionX="-132" positionY="-184" width="128" height="163"/>
+        <element name="Location" positionX="224" positionY="-154" width="128" height="133"/>
+        <element name="Audit" positionX="53" positionY="104" width="128" height="88"/>
     </elements>
 </model>

@@ -34,6 +34,10 @@ class MapViewController: UIViewController {
         let allAnnotations = self.mapView.annotations
         addGeoCachePin(allAnnotations, geoCaches)
     }
+
+    override func viewDidAppear(_ animated: Bool) {
+        print("something")
+    }
     
 
     /*

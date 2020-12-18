@@ -19,14 +19,43 @@ class GeoCacheListViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GeoCacheCell")
+        var cell:UITableViewCell? = nil
+        if( indexPath.row % 2 == 0){
+            let geoCell:CustomTableViewCell = tableView.dequeueReusableCell(withIdentifier: "GeoCacheCell") as! CustomTableViewCell
 
-        let currentGeoCache = GeoCacheController.geocacheList()[indexPath.row]
-        cell?.textLabel?.text = currentGeoCache.geocacheName
+            geoCell.enabledSwitch.tag = indexPath.row
 
-        return cell!
+            if( indexPath.row < 4){
+                geoCell.activityIndicator.startAnimating()
+            }
+            else{
+                geoCell.activityIndicator.stopAnimating()
+            }
+            return geoCell
+        }
+        else{
+            cell = tableView.dequeueReusableCell(withIdentifier: "BasicCell")
+            let currentGeoCache = GeoCacheController.geocacheList()[indexPath.row]
+            cell?.textLabel?.text = currentGeoCache.geocacheName
+            cell?.detailTextLabel?.text = "Seomthingslslsdkd"
+
+            return cell!
+        }
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300.0
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected row: \(indexPath.row)")
+        let geocacheToDelete = GeoCacheController.geocacheArray[indexPath.row]
+
+        DatabaseController.getContext().delete(geocacheToDelete)
+        DatabaseController.saveContext()
+    }
+
+    // MARK: -
 
     override func viewDidLoad() {
         super.viewDidLoad()
